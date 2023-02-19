@@ -57,7 +57,7 @@ void ElementPosition (int[,] matrix)
             }                      
         }      
     }    
-    if((rows*columens)==count) Console.WriteLine("по индексу ["+ rowIndex +", " + columnIndex + "] нет элемента. " );
+    if(((matrix.GetLength(0))*(matrix.GetLength(1)))==count) Console.WriteLine("по индексу ["+ rowIndex +", " + columnIndex + "] нет элемента. " );
 }
 
 void PrintArray(int[,] matrix)
