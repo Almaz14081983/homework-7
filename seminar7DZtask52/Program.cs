@@ -49,13 +49,13 @@ void ArithmMean(int[,] matrix)
     Console.Write("Среднее арифметическое каждого столбца: ");
     foreach (double elem in sum)
     {
-        double res = elem/matrix.GetLength(1);
+        double res = elem/matrix.GetLength(0);
         Console.Write($"{Math.Round(res, 2)}; "); 
     }
 
 }
 
-Math.Round(new Random().NextDouble() + new Random().Next(min, max), 1);
+//Math.Round(new Random().NextDouble() + new Random().Next(min, max), 2);
 
 void PrintArray(int[,] matrix)
 {
